@@ -12,5 +12,5 @@ const urlSchema = new Schema({
   }
 })
 
-// 把這資料稱為URL
-module.exports = model('Url', urlSchema)
+// 把這資料稱為URL，提供一個可操作的物件
+module.exports = mongoose.model('Url', urlSchema)

@@ -4,18 +4,22 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGOURL_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+const exphbs = require('express-handlebars');
+
+app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
+app.set('view engine', 'hbs')
 
 const db = mongoose.connection
-db.on('error',()=>{
+db.on('error', () => {
   console.log('mongodb error')
 })
-db.once('open',()=>{
+db.once('open', () => {
   console.log('mongodb connected')
 })
 
 // 設定首頁路由
 app.get('/', (req, res) => {
-  res.send('hello world')
+  res.render('index')
 })
 
 // 設定 port 3000

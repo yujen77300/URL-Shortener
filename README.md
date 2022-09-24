@@ -47,7 +47,7 @@ MONGOURL_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluste
 ```
 npm run dev
 ```
-6. 打開瀏覽器，輸入下列
+6. 打開瀏覽器，輸入下列網址
 ```
 localhost:3000
 ```

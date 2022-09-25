@@ -9,6 +9,7 @@
 + 輸入相同網址時，產生一樣的縮址
 + 若使用者沒有輸入內容，就按下了送出鈕，需要防止表單送出並提示使用者
 + 縮短完按下copy按鈕，可以直接取得縮短後的網址
++ 如不存在的網頁，可以導向首頁再重新輸入
 
 
 
@@ -17,6 +18,8 @@
 ![image](https://user-images.githubusercontent.com/54500773/192105936-f660dc0f-0dcd-4305-ba3e-053d432154d4.png)
 ![image](https://user-images.githubusercontent.com/54500773/192105944-8c36e569-3633-4c40-be7b-9da255bec2cf.png)
 ![image](https://user-images.githubusercontent.com/54500773/192105966-4b27bd6c-00e8-4d90-94a3-277829ae971c.png)
+![image](https://user-images.githubusercontent.com/54500773/192145686-81bc24d4-fe51-4091-b1fd-e57141fe3967.png)
+
 
 
 ## 使用工具

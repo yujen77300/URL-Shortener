@@ -1,8 +1,11 @@
 const express = require('express')
 const router = express.Router()
+const Url = require("../../models/url")
+// 載入產生隨機碼的函式
+const randomGenerator = require('../../shorten_url')
 
 // 新增縮短網址後的路由
-router.post('/url', (req, res) => {
+router.post('/', (req, res) => {
   Url.findOne({ origin_url: `${req.body.inputurl}` })
     .then(data => {
       // data是null如果為true，代表是第一次出現
